@@ -240,7 +240,7 @@ input[type=submit], input[type=button], button{-webkit-appearance: none; outline
 .icon-load{background:url(../img/loader.gif) no-repeat left top;width:40px;height:40px;position:fixed;left:50%;top:50%;margin-left:-20px;margin-left:-20px;display:none;}
 .loaded .icon-load{display:block;}
 
-/****** other */ 
+/****** other */  
 .fixed_line {  
     position: fixed;
     left: 0;
@@ -1023,5 +1023,21 @@ input[type=submit], input[type=button], button{-webkit-appearance: none; outline
    .tech {
         height: 680px;
     }
+    .intro {
+        height: 1273px;
+    }
 }//599
+@media handheld, only screen and (max-width: 480px) {
+    .intro {
+        height: 1530px;
+    }
+}
+@media handheld, only screen and (max-width: 320px) {
+    .tech_list li._middle:before {
+        top: -3px;
+    }
+    .tech_list li._last:before {
+        top: -3px;
+    }
+}
 

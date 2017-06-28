@@ -1140,4 +1140,20 @@ button {
   .tech {
     height: 680px;
   }
+  .intro {
+    height: 1273px;
+  }
+}
+@media handheld, only screen and (max-width: 480px) {
+  .intro {
+    height: 1530px;
+  }
+}
+@media handheld, only screen and (max-width: 320px) {
+  .tech_list li._middle:before {
+    top: -3px;
+  }
+  .tech_list li._last:before {
+    top: -3px;
+  }
 }
