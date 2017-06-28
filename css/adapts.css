@@ -1,0 +1,263 @@
+/* ====================================================
+   ADAPTS STYLES
+======================================================= 
+=======================================================
+=======================================================
+=======================================================
+=======================================================
+=======================================================
+=======================================================
+=======================================================
+=======================================================
+=======================================================
+=======================================================
+=======================================================
+=======================================================
+======================================================= */
+._mob {
+  display: none!important;
+}
+._desktop {
+  display: block!important;
+}
+@media handheld, only screen and (min-width: 1170px) {
+  .wrapper {
+    margin: 0 auto;
+    width: 1170px;
+  }
+}
+/****** 1365 -> 1280 */
+@media handheld, only screen and (max-width: 1365px) {
+  /****** header */
+  .header__logo {
+    left: 10px;
+  }
+  .slider-nav {
+    top: initial;
+    bottom: 49px;
+  }
+  /****** main about */
+  .main-about-paralax-row__bg {
+    display: none;
+  }
+  /****** footer */
+  .footer-subscride-form__field {
+    width: 200px;
+  }
+}
+/****** 1279 -> 1024 */
+/****** 1023 -> 769 */
+/****** 768 -> 320 */
+@media handheld, only screen and (max-width: 768px) {
+  ._mob {
+    display: block!important;
+  }
+  ._desktop {
+    display: none!important;
+  }
+  /****** header */
+  .header {
+    height: 45px;
+    box-shadow: 5px 4px 4px 0px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    position: relative;
+    padding: 0;
+  }
+  .header .wrapper {
+    padding: 0 18px;
+  }
+  .header__logo {
+    width: 133px;
+    background-position: 0 0;
+    height: 43px;
+    margin-top: 13px;
+    left: 0;
+  }
+  .header-lang {
+    display: none;
+  }
+  /****** slider */
+  .slider {
+    height: 177px;
+  }
+  .menu__burger {
+    display: block;
+  }
+  .header-menu {
+    display: none;
+    margin: 0 0 0 0;
+    position: relative;
+    background: #3eb1e7;
+    float: none;
+    width: 100%;
+    border-bottom: 2px solid #3864af;
+  }
+  .header-menu ul {
+    display: block;
+    padding-left: 0;
+  }
+  .header-menu > ul {
+    padding: 0 16px;
+  }
+  .header-menu ul li {
+    width: 100%;
+    margin: 0;
+    background: #3eb1e7;
+    display: block;
+    position: relative;
+  }
+  .header-menu ul li:last-child {
+    border-bottom: none;
+  }
+  .header-menu ul li:first-child {
+    border-top: none;
+  }
+  .header-menu ul li a {
+    padding: 19px 0;
+    text-transform: none;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 600;
+    display: block;
+    border-left: none;
+    float: none;
+    text-align: left;
+    padding-left: 15px;
+    z-index: 1;
+    border-bottom: 1px solid #6EC5ED;
+  }
+  .header-menu ul li:after {
+    content: "";
+    right: 11px;
+    top: 25px;
+    width: 9px;
+    height: 9px;
+    cursor: pointer;
+    background: url('../images/sprites-mob.png') no-repeat;
+    position: absolute;
+    display: none;
+  }
+  .header-menu ul li.minus:after {
+    display: block;
+    background-position: -247px 2px;
+  }
+  .header-menu ul li.plus:after {
+    display: block;
+    background-position: -227px 0;
+  }
+  .header-menu ul li ul {
+    display: none;
+    margin: 0 0;
+  }
+  .header-menu ul li ul li {
+    background: #3EB1E7;
+  }
+  .header-menu ul li ul li:before {
+    background: url('../images/sprites-mob.png') no-repeat;
+    background-position: -159px 0;
+    float: left;
+    margin-right: 11px;
+    width: 5px;
+    height: 5px;
+    position: relative;
+    top: 24px;
+  }
+  .header-menu ul li ul li:after {
+    display: none;
+  }
+  .header-menu ul li ul li a {
+    float: none;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 600;
+  }
+  .header-menu ul li.active > a {
+    color: #fff;
+  }
+  .header-menu ul.sub li {
+    border: none;
+  }
+  .header-menu ul.sub li a {
+    padding-left: 30px;
+    position: relative;
+    border-bottom: 1px solid #6EC5ED;
+    width: 80%;
+  }
+  .header-menu ul.sub li a:before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    left: 26px;
+    top: 26px;
+    background: url('../images/point-list.png') no-repeat;
+  }
+  .header-menu ul.sub li.minus:after {
+    display: block;
+    background-position: -247px 2px;
+  }
+  .header-menu ul.sub li.plus:after {
+    display: block;
+    background-position: -227px 0;
+    height: 12px;
+  }
+  .header-menu ul.sub li ul li a {
+    padding-left: 45px;
+  }
+  .header-menu ul.sub li ul li a:before {
+    display: none;
+  }
+  /****** sub 3 level */
+  .header-menu ul.sub li ul.sub {
+    padding-left: 53px;
+  }
+  .header-menu ul.sub li ul.sub li:before {
+    background-position: -269px 0;
+    width: 5px;
+    height: 5px;
+    display: inline-block;
+    margin-right: 8px;
+    margin-top: 3px;
+  }
+  .header-menu ul.sub li ul.sub li a {
+    padding-left: 15px;
+    border: none;
+  }
+  /****** footer */
+  .footer {
+    height: 90px;
+    border-top: 2px solid #e6e6e6;
+  }
+  .footer__copy {
+    float: none;
+    margin: 0 0 5px 0;
+    padding: 35px 0 0 0;
+  }
+  .footer__designe {
+    float: none;
+    margin: 0;
+    padding-right: 0;
+  }
+  /***** other**/
+  .button {
+    height: 40px;
+    padding: 0 10px;
+    font-size: 16px;
+    line-height: 40px;
+  }
+  .button span:after {
+    position: relative;
+    top: 1px;
+  }
+  .title {
+    font-size: 21px;
+  }
+  .breadcrumb {
+    display: none;
+  }
+}
+/****** 599 -> 320 */
+/****** 479 -> 320 */
+/* ====================================================
+   END ADAPTS STYLES
+======================================================= */
