@@ -1,0 +1,308 @@
+/* ==============================
+   $Contents
+   ==============================*/
+
+/**
+* Contents......................Here we are!
+* Reset.........................Reset defaults
+*   Elements lib................Import Scss elements library
+* General styles................Abstract styles
+* Form..........................Form styles
+*/
+
+/* ==============================
+   $Reset
+   ==============================*/
+
+/* Modified reset css, original by http://meyerweb.com/eric/tools/css/reset/  */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+input,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+	font-weight: normal;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+button,
+input[type=submit] {
+	cursor: pointer;
+}
+
+/* ==============================
+   $Elements lib
+   ==============================*/
+
+/* ==============================
+   $General styles
+   ==============================*/
+
+*::-moz-selection {
+	background: #fff;
+	color: #000;
+}
+
+*::selection {
+	background: #fff;
+	color: #000;
+}
+
+*::-moz-selection {
+	background: #fff;
+	color: #000;
+}
+
+body {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 0 30px;
+}
+
+/* ==============================
+   $Form
+   ============================== */
+
+::-webkit-input-placeholder {
+	color: #aaa;
+	font-family: sans-serif;
+	font-size: 16px;
+}
+
+:-moz-placeholder {
+	color: #aaa;
+	font-family: sans-serif;
+	font-size: 16px;
+}
+
+::-moz-placeholder {
+	color: #aaa;
+	font-family: sans-serif;
+	font-size: 16px;
+}
+
+:-ms-input-placeholder {
+	color: #aaa;
+	font-family: sans-serif;
+	font-size: 16px;
+}
+
+.form {
+	display: block;
+	margin-top: 100px;
+	color: #333;
+	font-size: 18px;
+}
+
+.form label {
+	display: block;
+	margin-bottom: 5px;
+	color: #333;
+	font-size: 20px;
+	font-style: italic;
+}
+
+.form input,
+.form textarea,
+.form select {
+	display: block;
+	width: 100%;
+	padding: 10px 5px;
+	color: #333;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #aaa;
+	border-radius: 0;
+	font-family: sans-serif;
+	font-size: 16px;
+	transition: all 0.5s ease 0;
+}
+
+.form textarea {
+	height: 150px;
+}
+
+.form__field {
+	margin-bottom: 15px;
+}
+
+.form__field_submit {
+	display: block;
+	width: 40%;
+	margin: 0 auto;
+}
+
+.form__field_submit input {
+	width: 100%;
+	background-color: #e6e6e6;
+}
+
+.form__field_submit input:hover {
+	background-color: #aaa;
+}
+
+.form .valid {
+	border-color: #25c025;
+	background-color: rgba(37, 192, 37, 0.1);
+}
+
+.form .error {
+	background-color: rgba(192, 37, 192, 0.1);
+}
+
+.form-error {
+	display: block;
+	margin-top: 5px;
+	color: #c02525;
+	font-style: italic;
+}
+
+.form__response {
+	position: absolute;
+	z-index: 100;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: none;
+	margin: auto;
+	background-color: #e6e6e6;
+}
+
+.form__response p {
+	margin-top: 20%;
+	font-size: 30px;
+	text-align: center;
+}
+
+.form__response_error p {
+	color: #c02525;
+}
+
+.form__response_success p {
+	color: #25c025;
+}
+
