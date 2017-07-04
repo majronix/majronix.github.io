@@ -1147,6 +1147,16 @@ button {
     background-position: center;
   }
 }
+@media handheld, only screen and (max-width: 1365px) {
+  /*
+	================================================================================
+	|                                     TECH_SEARCH                                    |
+	================================================================================
+	*/
+  .tech_search._min .tech_search_col img {
+    right: -143px;
+  }
+}
 @media handheld, only screen and (max-width: 1200px) {
   .fixed_line {
     display: none;
@@ -1157,10 +1167,59 @@ button {
   .footer_service {
     padding-right: 0;
   }
+  /*
+	================================================================================
+	|                                     THANK                                    |
+	================================================================================
+	*/
+  .thank_download {
+    padding-top: 40px;
+  }
+  .thank_download_man {
+    display: none;
+  }
+  .thank_download_laptop {
+    right: initial;
+    left: 214px;
+  }
 }
 @media handheld, only screen and (max-width: 1199px) {
   .wrapper {
     padding: 0 15px!important;
+  }
+  /*
+	================================================================================
+	|                                     TECH                                   |
+	================================================================================
+	*/
+  .tech .wrapper .tech_book {
+    display: none;
+  }
+  .tech_button {
+    margin: 58px auto 0;
+    float: none;
+  }
+  /*
+	================================================================================
+	|                                     CREATE                                   |
+	================================================================================
+	*/
+  .create_service li {
+    width: 33.33%;
+    margin-left: 0;
+    padding-right: 15px;
+  }
+  .create_content_col:first-child {
+    background-size: contain;
+  }
+  /*
+	================================================================================
+	|                                     TECH_SEARCH                                    |
+	================================================================================
+	*/
+  .tech_search._min .tech_search_col img {
+    right: -27px;
+    width: 100%;
   }
 }
 @media handheld, only screen and (max-width: 1023px) {
@@ -1177,6 +1236,24 @@ button {
   .tech_search_download {
     top: 195px;
     right: 48px;
+  }
+  /*
+	================================================================================
+	|                                     TECH_SEARCH                                    |
+	================================================================================
+	*/
+  .page_search_help .tech_search_col {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  .page_search_help .tech_search_col:first-child {
+    display: none;
+  }
+  .page_search_help .tech_search_col:last-child {
+    width: 100%;
+    padding-left: 15px!important;
+    padding-right: 15px!important;
   }
 }
 @media handheld, only screen and (max-width: 960px) {
@@ -1195,6 +1272,53 @@ button {
   .tech_search_col:last-child {
     padding-left: 0;
   }
+  /*
+	================================================================================
+	|                                     THANK                                    |
+	================================================================================
+	*/
+  .thank_download_laptop {
+    left: 198px;
+    background-size: contain;
+    width: 600px;
+  }
+  /*
+	================================================================================
+	|                                     CREATE                                   |
+	================================================================================
+	*/
+  .create_service li {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .create_content_menu li {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .create_content_menu li:before {
+    top: 5px;
+  }
+}
+@media handheld, only screen and (max-width: 800px) {
+  /*
+	================================================================================
+	|                                     CREATE                                   |
+	================================================================================
+	*/
+  .create_content_col:first-child {
+    display: none;
+  }
+  .create_content_col:last-child {
+    padding-left: 0;
+  }
+  .create_content_col {
+    float: none;
+    width: 100%;
+    min-height: inherit;
+  }
+  .create_service {
+    margin: 0 auto 30px;
+  }
 }
 @media handheld, only screen and (max-width: 768px) {
   /*
@@ -1202,11 +1326,24 @@ button {
 	|                                     TECH                                   |
 	================================================================================
 	*/
+  .tech {
+    height: 200px;
+  }
+  .tech_button {
+    margin: -12px auto 0;
+    background-size: 219px;
+    background-position: center 37px;
+    width: 100%;
+  }
+  .tech_button .but {
+    width: 300px;
+    margin: 0 auto;
+  }
   .tech_search {
     height: 425px;
   }
   .tech_search_col:last-child {
-    padding-top: 30px;
+    padding-top: 16px;
     padding-left: 0;
   }
   .tech_search_titles {
@@ -1293,7 +1430,7 @@ button {
   }
   .necessary_desc._help {
     margin-top: 40px;
-    padding: 30px 0 20px;
+    padding: 30px 15px 20px;
   }
   .necessary_desc__icon {
     width: 85px;
@@ -1363,6 +1500,177 @@ button {
   }
   /*
 	================================================================================
+	|                                     THANK                                    |
+	================================================================================
+	*/
+  .thank_download {
+    height: 285px;
+  }
+  .thank_download_titles {
+    font-size: 23px;
+    margin-bottom: 18px;
+    line-height: 26px;
+  }
+  .thank_download__slogan {
+    font-size: 12px;
+    line-height: 16px;
+    padding-left: 10px;
+    border-left: 2px solid #2e55ad;
+    margin-bottom: 40px;
+  }
+  .thank_download_laptop {
+    left: 249px;
+    background-size: contain;
+    width: 377px;
+    bottom: -56px;
+    height: 202px;
+  }
+  .thank_download_laptop:before {
+    left: 15px;
+    top: 75px;
+    width: 48px;
+    height: 16px;
+    background: url(../img/tech_thank_arrow.png) no-repeat left 0;
+    background-size: contain;
+  }
+  .thank_download__info {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  /*
+	================================================================================
+	|                                     CREATE                                   |
+	================================================================================
+	*/
+  .create {
+    padding: 20px 0 30px;
+  }
+  .create_slogan {
+    font-size: 12px;
+    margin-bottom: 12px;
+    line-height: 16px;
+  }
+  .create_titles {
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 20px;
+  }
+  .create_service {
+    margin: 0 0 20px;
+  }
+  .create_service li {
+    float: none;
+    width: 100%;
+    margin-bottom: 10px;
+    padding-right: 0;
+    padding-left: 27px;
+  }
+  .create_service li:before {
+    background: url(../img/sprites_icon_mob.png) no-repeat 0 0;
+    width: 18px;
+    height: 18px;
+  }
+  .create_service li._icon_1:before {
+    background-position: 2px 2px;
+  }
+  .create_service li._icon_2:before {
+    background-position: -20px 3px;
+  }
+  .create_service li._icon_3:before {
+    background-position: -41px 2px;
+  }
+  .create_content__title {
+    font-size: 15px;
+    line-height: 16px;
+    margin-bottom: 20px;
+  }
+  .create_content_menu li:before {
+    top: 4px;
+    width: 8px;
+    height: 8px;
+    background-size: cover;
+  }
+  .create_content_menu li {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  /*
+	================================================================================
+	|                                     TECH_SEARCH                                    |
+	================================================================================
+	*/
+  .page_search_help .tech_search._min {
+    height: 615px;
+  }
+  .page_search_help .tech_search_col {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  .page_search_help .tech_search_col:first-child {
+    display: none;
+  }
+  /*
+	================================================================================
+	|                                     TECH_SEARCH                                    |
+	================================================================================
+	*/
+  .page_search_help .tech_search._min {
+    height: 205px;
+  }
+  .search_done__title {
+    font-size: 21px;
+    margin-bottom: 20px;
+    padding-top: 30px;
+  }
+  .search_done__desc {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  /*
+	================================================================================
+	|                                     INSTRUCTION                                    |
+	================================================================================
+	*/
+  .instruction {
+    padding: 30px 0 30px;
+  }
+  .instruction_colums {
+    margin: 0 0 0 0;
+  }
+  .instruction_col {
+    width: 100%;
+    float: none;
+    padding-left: 0;
+    margin-bottom: 10px;
+  }
+  .instruction_icon {
+    display: table;
+    margin: 0 auto 8px;
+    width: 150px;
+    height: 145px;
+  }
+  .instruction_icon._icon_1 {
+    background-size: contain;
+    background-position: 0 23px;
+  }
+  .instruction_icon._icon_2 {
+    background: url(../img/instruction_icon2.png) no-repeat 0 35px;
+    background-size: contain;
+  }
+  .instruction_icon._icon_3 {
+    background: url(../img/instruction_icon3.png) no-repeat 0 35px;
+    background-size: contain;
+  }
+  .instruction__desc {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .instruction__level {
+    margin-bottom: 8px;
+  }
+  /*
+	================================================================================
 	|                                     OTHER                                    |
 	================================================================================
 	*/
@@ -1429,6 +1737,23 @@ button {
     padding-bottom: 96px !important;
   }
 }
+@media handheld, only screen and (max-width: 599px) {
+  /*
+	================================================================================
+	|                                     THANK                                    |
+	================================================================================
+	*/
+  .thank_download_laptop {
+    left: 258px;
+    width: 236px;
+    bottom: -56px;
+    height: 152px;
+  }
+  .thank_download_laptop:before {
+    left: -21px;
+    top: 32px;
+  }
+}
 @media handheld, only screen and (max-width: 480px) {
   /*
 	================================================================================
@@ -1475,6 +1800,29 @@ button {
 	*/
   .intro {
     height: 295px;
+  }
+  /*
+	================================================================================
+	|                                     THANK                                    |
+	================================================================================
+	*/
+  .thank_download {
+    padding-top: 20px;
+    height: 245px;
+  }
+  .thank_download_laptop {
+    display: none;
+  }
+  .thank_download__slogan {
+    margin-bottom: 27px;
+  }
+  /*
+	================================================================================
+	|                                     TECH                                     |
+	================================================================================
+	*/
+  .tech_button .but {
+    width: 100%;
   }
   .footer_support a {
     margin-top: 5px;
