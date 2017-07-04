@@ -367,7 +367,7 @@
 	================================================================================
 	*/
 	.intro {
-	    height: 255px;
+	    height: 275px;
 	}
 	.intro_about {
 	    padding-top: 30px;
@@ -387,6 +387,9 @@
 	    width: 100%;
 	    &:first-child {
 	    }
+	}
+	.intro_about_col {
+		max-width: 300px;
 	}
 	.intro_about_name {
 	    border-left: 2px solid #2e55ad;
@@ -667,6 +670,19 @@
 	    left: -21px;
 	    top: 32px;
 	}
+	/*
+	================================================================================
+	|                                     INTRO                                    |
+	================================================================================
+	*/
+	.intro_about {
+	    padding-top: 102px;
+	}
+	.intro_about_name {
+	    bottom: 212px;
+	    right: initial;
+	    left: 0;
+	}
     
 }//599
 @media handheld, only screen and (max-width: 520px) {
@@ -721,6 +737,15 @@
 	.intro {
 	    height: 295px;
 	}
+	.intro_about {
+	    padding-top: 154px;
+	}
+	.intro_about__title {
+	    margin-bottom: 4px;
+	}
+	.intro_about__info {
+	    margin-bottom: 9px;
+	}
 	/*
 	================================================================================
 	|                                     THANK                                    |
@@ -753,5 +778,26 @@
 @media handheld, only screen and (max-width: 360px) {
 	.tech_search {
 	    height: 485px;
+	}
+	.intro {
+	    height: 316px;
+	    background-position: center -10px;
+	}
+}
+@media (min-width: 769px)and (max-width: 948px) {
+	.tech_search {
+	    height: 735px;
+	}
+}
+@media (min-width: 571px)and (max-width: 948px) {
+	.tech_search_col:last-child {
+	    width: 570px;
+    	margin: 0 auto;
+	}
+}
+@media (min-width: 481px)and (max-width: 571px) {
+	.tech_search_col:last-child {
+	    width: 100%;
+    	margin: 0 auto;
 	}
 }
