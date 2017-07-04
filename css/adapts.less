@@ -151,6 +151,9 @@
 	|                                     TECH                                   |
 	================================================================================
 	*/
+	.tech_search {
+	    height: 695px;
+	}
 	.tech_search_col {
 		float: none;
 		width: 100%;
@@ -231,7 +234,7 @@
 		}
 	}
 	.tech_search {
-		height: 425px;
+		height: 365px;
 	}
 	.tech_search_col:last-child {
 	    padding-top: 16px;
@@ -648,9 +651,6 @@
     }
     
 }//768
-@media handheld, only screen and (max-width: 748px) {
- 
-}
 @media handheld, only screen and (max-width: 599px) {
 	/*
 	================================================================================
@@ -669,6 +669,11 @@
 	}
     
 }//599
+@media handheld, only screen and (max-width: 520px) {
+	.tech_search {
+	    height: 380px; 
+	}
+}
 @media handheld, only screen and (max-width: 480px) {
 	/*
 	================================================================================
@@ -676,7 +681,7 @@
 	================================================================================
 	*/
 	.tech_search {
-		height: 510px;
+		height: 449px;
 	}
 	.form_row._tech {
 	    margin: 0 0 0 0;
@@ -743,5 +748,10 @@
 	.footer_support a {
 		margin-top: 5px;
 		display: block;
+	}
+}
+@media handheld, only screen and (max-width: 360px) {
+	.tech_search {
+	    height: 485px;
 	}
 }

@@ -1262,6 +1262,9 @@ button {
 	|                                     TECH                                   |
 	================================================================================
 	*/
+  .tech_search {
+    height: 695px;
+  }
   .tech_search_col {
     float: none;
     width: 100%;
@@ -1340,7 +1343,7 @@ button {
     margin: 0 auto;
   }
   .tech_search {
-    height: 425px;
+    height: 365px;
   }
   .tech_search_col:last-child {
     padding-top: 16px;
@@ -1754,6 +1757,11 @@ button {
     top: 32px;
   }
 }
+@media handheld, only screen and (max-width: 520px) {
+  .tech_search {
+    height: 380px;
+  }
+}
 @media handheld, only screen and (max-width: 480px) {
   /*
 	================================================================================
@@ -1761,7 +1769,7 @@ button {
 	================================================================================
 	*/
   .tech_search {
-    height: 510px;
+    height: 449px;
   }
   .form_row._tech {
     margin: 0 0 0 0;
@@ -1827,5 +1835,10 @@ button {
   .footer_support a {
     margin-top: 5px;
     display: block;
+  }
+}
+@media handheld, only screen and (max-width: 360px) {
+  .tech_search {
+    height: 485px;
   }
 }
