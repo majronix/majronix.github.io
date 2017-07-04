@@ -1619,12 +1619,12 @@ button {
 	================================================================================
 	*/
   .page_search_help .tech_search._min {
-    height: 205px;
+    height: 175px;
   }
   .search_done__title {
     font-size: 21px;
     margin-bottom: 20px;
-    padding-top: 30px;
+    padding-top: 10px;
   }
   .search_done__desc {
     font-size: 15px;
